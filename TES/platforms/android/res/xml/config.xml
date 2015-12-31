@@ -6,7 +6,7 @@
         <param name="onload" value="true" />
     </feature>
     <allow-intent href="market:*" />
-    <name>HelloCordova</name>
+    <name>TES</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -21,4 +21,5 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <icon src="www/icons/TES.png" />
 </widget>
