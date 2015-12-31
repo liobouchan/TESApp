@@ -1,8 +1,11 @@
 .backgroudFull {
-  background: url(../img/index.jpg) no-repeat center center fixed;
-  max-width: 100%;
-  height: auto;
-  display: block;
+  background: url(../img/index.jpg) fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
 }
 .jumbotron {
   position: absolute;
