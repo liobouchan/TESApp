@@ -51,30 +51,37 @@
       </div>
     </nav>
 
-    <div class="container" id="googleMap" style="width:100%;height:500px;"></div> <!-- /container -->
-    <br>
+    <!-- /container -->
+    <div class="container" id="googleMap"></div>
     <div class="container">
       <form action="index.html">
         <div class="row">
           <div class="input-group col-xs-12 col-sm-12 col-md-12">
+            <div class="page-header">
+              <h3>Viajar <small>Selecciona según tu preferencia</small></h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group col-xs-12 col-sm-12 col-md-12">
             <div class="col-xs-3 col-sm-3 col-md-3">
               <span class="">
-                <input type="radio" name="radioAuto" aria-label="ok"> 2 Puertas
+                <input type="radio" name="radioAuto" id="2Puertas" value="2"> 2 Puertas
               </span>
             </div>
             <div class="col-xs-3 col-sm-3 col-md-3">
               <span class="">
-                <input type="radio" name="radioAuto" aria-label="ok"> 4 Puertas
+                <input type="radio" name="radioAuto" id="4Puertas" value="4"> 4 Puertas
               </span>
             </div>
             <div class="col-xs-3 col-sm-3 col-md-3">
               <span class="">
-                <input type="radio" name="radioAuto" aria-label="ok"> Camioneta
+                <input type="radio" name="radioAuto" id="camioneta" value="5"> Camioneta
               </span>
             </div>
             <div class="col-xs-3 col-sm-3 col-md-3">
               <span class="">
-                <input type="radio" name="radioAuto" aria-label="ok"> Inválidos
+                <input type="radio" name="radioAuto" id="invalidos" value="6"> Inválidos
               </span>
             </div>
           </div>
@@ -83,7 +90,15 @@
         <div class="row">
           <div class="btn-group btn-group-justified col-xs-12 col-sm-12 col-md-12">
             <div class="btn-group">
-              <button type="submit" class="btn btn-default btn-primary">Cotizar</button>
+              <select class="form-control" id="destino">
+                <option value="casa"> Viajar a Casa </option>
+                <option value="trabajo"> Viajar al Trabajo </option>
+                <option value="escuela"> Viajar a la escuela </option>
+                <option value="chofer"> Acordar con el chofer </option>
+              </select>
+            </div>
+            <div class="btn-group">
+              <button type="button" onClick="cotizar();" class="btn btn-default btn-primary">Cotizar Viaje</button>
             </div>
             <div class="btn-group">
               <button type="submit" class="btn btn-default btn-danger">Solicitar</button>
@@ -100,6 +115,6 @@
     <!-- Custom JavaScript -->
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script src="js/indexAppGoogleMap.js"></script>
-
+    <script src="js/indexApp.js"></script>
   </body>
 </html>

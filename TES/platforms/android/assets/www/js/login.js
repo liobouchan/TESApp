@@ -4,7 +4,9 @@ function login() {
   var password = document.getElementById('password').value;
   var nombres = [ 'leo',
                   'a@a.com',
-                  'the_liontaker@hotmail.com'
+                  'the_liontaker@hotmail.com',
+                  'momo7153@gmail.com',
+                  'andrew'
                 ];
 
   if( isInArray(email,nombres) == true){
