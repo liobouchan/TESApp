@@ -9,8 +9,12 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
     <!--Custom CSS -->
     <link href="css/indexApp.css" rel="stylesheet">
+    <link href="css/solicitarViaje.css" rel="stylesheet">
+    <link href="css/perfil.css" rel="stylesheet">
   </head>
   <body>
     <!-- Fixed navbar -->
@@ -52,66 +56,44 @@
     </nav>
 
     <!-- /container -->
-    <div id="floating-panel">
-      <button id="drop" onclick="(new initialize).drop()" class="btn btn-default btn-danger">Ver TES's alrededor</button>
-    </div>
-    <div class="container" id="googleMap"></div>
     <div class="container">
-      <form action="solicitarViaje.html">
-        <div class="row">
-          <div class="input-group col-xs-12 col-sm-12 col-md-12">
-            <div class="page-header">
-              <h3 id="headerInfo">Viajar <small>Selecciona según tu preferencia</small></h3>
+      <div class="row">
+        <div class="input-group col-xs-12 col-sm-12 col-md-12">
+          <div class="well profile">
+            <div class="col-sm-12">
+              <div class="col-xs-12 col-sm-8">
+                <h2>Scarlett Johansson</h2>
+                <p><strong>Casada con : </strong> Leonardo Bouchan </p>
+                <p><strong>Teléfono Móvil: </strong> 5527375421 </p>
+                <p><strong>Tarjeta Predeterminada: </strong> **** **** **** 8352 MasterCard </p>
+                <p><strong>Estado: </strong>
+                  <span class="tags">Polanco, Distrito Federal</span>
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-4 text-center">
+                <figure>
+                  <img src="icons/miAmor.jpg" alt="" class="img-circle img-responsive">
+                  <figcaption class="ratings">
+                    <p>Calificación</p>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="col-xs-12 divider text-center">
+              <div class="col-xs-12 col-sm-4 emphasis">
+                <h2><strong> 20 </strong></h2>
+                <p><small>Viajes</small></p>
+                <!-- <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow </button> -->
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="input-group col-xs-12 col-sm-12 col-md-12">
-            <div class="col-xs-3 col-sm-3 col-md-3">
-              <span class="">
-                <input type="radio" name="radioAuto" id="2Puertas" value="2Puertas"> 2 Puertas
-              </span>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-3">
-              <span class="">
-                <input type="radio" name="radioAuto" id="4Puertas" value="4Puertas"> 4 Puertas
-              </span>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-3">
-              <span class="">
-                <input type="radio" name="radioAuto" id="camioneta" value="camioneta"> Camioneta
-              </span>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-3">
-              <span class="">
-                <input type="radio" name="radioAuto" id="invalidos" value="invalidos"> Inválidos
-              </span>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="btn-group btn-group-justified col-xs-12 col-sm-12 col-md-12">
-            <div class="btn-group">
-              <select class="form-control" id="destino">
-                <option value="casa"> Viajar a Casa </option>
-                <option value="trabajo"> Viajar al Trabajo </option>
-                <option value="escuela"> Viajar a la escuela </option>
-                <option value="chofer"> Acordar con el chofer </option>
-              </select>
-            </div>
-            <div class="btn-group">
-              <button type="button" onClick="cotizar();" class="btn btn-default btn-primary">Cotizar Viaje</button>
-            </div>
-            <div class="btn-group">
-              <button type="submit" class="btn btn-default btn-danger">Solicitar</button>
-            </div>
-          </div>
-        </div>
-      </form>
-      <br>
-      <br>
-    </div>
+      </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
